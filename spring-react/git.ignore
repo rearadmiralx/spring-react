@@ -1,0 +1,13 @@
+# Ignore JAR files in the docker directory
+docker/*.jar
+
+# Ignore Node.js related directories
+src/main/frontend/node/
+src/main/frontend/node_modules/
+
+# Ignore static resources
+src/main/resources/static/
+
+# Ignore test package during mvn clean
+target/test-classes/
+target/surefire-reports/
