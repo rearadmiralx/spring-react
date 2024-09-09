@@ -8,7 +8,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/test")
+@RequestMapping("/testing/gthelper")
 public class TestController {
 
     @GetMapping("/data")

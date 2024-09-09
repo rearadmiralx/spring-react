@@ -6,7 +6,7 @@ const TestPage = () => {
     const navigate = useNavigate(); // Hook to programmatically navigate
 
     useEffect(() => {
-        fetch('http://localhost:8080/test/data')
+        fetch('/testing/gthelper/data')
             .then(response => response.json())
             .then(data => setData(data))
             .catch(error => console.error('Error fetching data:', error));
@@ -20,8 +20,8 @@ const TestPage = () => {
             ) : (
                 <p>Loading...</p>
             )}
-            <button onClick={() => navigate('/excel')}>Go to Excel Uploader</button>
-            <button onClick={() => navigate('/')}>Go to Home</button>
+            <button onClick={() => navigate('/testing/csv-to-excel')}>Go to Excel Uploader</button>
+            <button onClick={() => navigate('/testing')}>Go to Home</button>
         </div>
     );
 };

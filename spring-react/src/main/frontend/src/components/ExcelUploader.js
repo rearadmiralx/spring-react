@@ -10,7 +10,7 @@ const ExcelUploader = () => {
       const formData = new FormData();
       formData.append('file', acceptedFiles[0]);
 
-      const response = await axios.post('http://localhost:8080/convert', formData, {
+      const response = await axios.post('/testing/csv-to-excel/convert', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -28,7 +28,7 @@ const ExcelUploader = () => {
   const handleDownload = async () => {
     try {
       const response = await axios({
-        url: `download?excelFilePath=${encodeURIComponent(downloadLink)}`,
+        url: `csv-to-excel/download?excelFilePath=${encodeURIComponent(downloadLink)}`,
         method: 'GET',
         responseType: 'blob', // Important
       });
