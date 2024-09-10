@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center elements vertically */
+    width: 90vw; /* Full width of the container */
+    margin-bottom: 15px; /* Space below the controls */
+}
+
+.upload-button {
+    margin-right: 10px; /* Space to the next element */
+}
+
+.sheet-dropdown {
+    margin-right: 10px; /* Space to the button */
+}
+
+.save-button {
+    padding: 5px 15px; /* Button padding */
+}
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Center the table within the container */
+    align-items: center; /* Center vertically if needed */
+    width: 90vw;
+    overflow: auto; /* Make the table scrollable if necessary */
+    margin-bottom: 5vh;
+}
+
+.excel-table {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjust height to content */
+    border-collapse: collapse; /* Collapse borders */
+    font-family: Arial, sans-serif; /* Font */
+}
+
+.excel-table th, .excel-table td {
+    border: 1px solid #ccc;
+    padding: 12px 15px; /* Adjust padding */
+    text-align: left;
+    white-space: nowrap;
+}
+
+.excel-table th {
+    background-color: #28ed7d;
+    font-weight: bold;
+    color: #333;
+}
+
+.excel-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.excel-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.excel-table tr:hover {
+    background-color: #e8f0fe;
+}
+
+.header-row th {
+    border-bottom: 2px solid #0074cc;
+}
+
+.data-row td {
+    color: #555;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+select {
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 14px;
+}
