@@ -4,10 +4,12 @@ html, body {
 }
 
 .container {
+    padding: 2vw;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
+    width: 95vw; /* Full height of the viewport */
 }
 
 .controls {
@@ -31,32 +33,37 @@ html, body {
 }
 
 .table-container {
-    display: flex;
+    /*display: flex; */
     justify-content: center; /* Center the table within the container */
     align-items: center; /* Center vertically if needed */
-    width: 90vw;
-    overflow: auto; /* Make the table scrollable if necessary */
-    margin-bottom: 5vh;
+    width: 100%;
+    max-height: 70vh; /* Set a maximum height */
+    overflow: auto; /* Make the table scrollable in both directions */
+
 }
 
 .excel-table {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Adjust height to content */
+    min-width: 100%; /* Adjust to ensure columns are not cut off */
+    width: max-content; /* Allow table to expand based on content */
     border-collapse: collapse; /* Collapse borders */
     font-family: Arial, sans-serif; /* Font */
 }
 
 .excel-table th, .excel-table td {
     border: 1px solid #ccc;
-    padding: 12px 15px; /* Adjust padding */
+    padding: 10px 12px; /* Adjust padding */
     text-align: left;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevent wrapping of text */
+    font-size: 14px; /* Adjust font size for readability */
 }
 
 .excel-table th {
     background-color: #28ed7d;
     font-weight: bold;
     color: #333;
+    position: sticky; /* Make headers sticky */
+    top: 0; /* Stick to the top */
+    z-index: 1; /* Ensure headers are above other content */
 }
 
 .excel-table tr:nth-child(even) {
