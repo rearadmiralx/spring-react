@@ -95,3 +95,53 @@ select {
     padding: 5px;
     font-size: 14px;
 }
+
+
+/* For Pagination */
+/* .pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .pagination-item {
+    margin: 0 10px;
+  }
+  
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagination-controls button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .pagination-controls button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .page-input input {
+    width: 40px;
+    text-align: center;
+  }
+  
+  .page-input span {
+    margin-left: 5px;
+  }
+  
+   */
+
+
+   
